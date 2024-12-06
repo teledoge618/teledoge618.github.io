@@ -2,41 +2,22 @@
     "site_name": "mysite",
     "site_slogon": "",
     "site_root_url": "/",
-    "site_domain": "my_name.github.io",
+    "site_domain": "teledoge618.github.io",
     "site_protocol": "https",
     "config_template_dir": "config",
-    "source": "https://github.com/my_name/my_name.github.io/blob/main",
+    "source": "https://github.com/teledoge618/teledoge618.github.io/",
     "route": {
         "docs": {
-            "/get_started/zh/": "docs/get_started/zh"
+            "/docs/": "docs/"
         },
         "pages": {
-            "/": "pages/index/zh"
-        },
-        "assets": {
-            "/static/": "static",
-            "/get_started/assets/": "docs/get_started/assets"
+            "/": "pages/index/"
         },
         "blog": {
-            "/blog/": "blog"
-        }
-    },
-    "translate": {
-        "docs": {
-            "/get_started/zh/": [
-                {
-                    "url": "/get_started/en/",
-                    "src": "docs/get_started/en"
-                }
-            ]
+            "/blog/": "blog/"
         },
-        "pages": {
-            "/": [
-                {
-                    "url": "/en/",
-                    "src": "pages/index/en"
-                }
-            ]
+        "assets": {
+            "/static/": "static/"
         }
     },
     "plugins": {
