@@ -1,9 +1,0 @@
-items:
--   label: 简介
-    file: /get_started/README.md
--   label: 快速上手
-    file: /get_started/quick_start.md
--   label: 配置
-    file: /get_started/config.md
--   label: 功能
-    file: /get_started/features.md

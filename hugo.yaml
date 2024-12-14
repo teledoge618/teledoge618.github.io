@@ -1,0 +1,62 @@
+baseURL: "https://teledoge618.github.io/"
+title: Teledoge618' Blog # 网站名
+theme: "PaperMod" # 主题
+pagerSize: 5 # 显示文章数量
+author: ["Me"]
+
+languageCode: zh
+defaultContentLanguage: zh
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+
+menu: # 标题菜单
+  main:
+    - name: "文章"
+      url: "/posts/archives/"
+    - name: "搜索"
+      url: "/search/"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params: # 参数
+  env: production # 可以被搜索到
+  title: Teledoge618' Blog # 网站名
+
+  defaultTheme: auto # 主题，明/暗/自动
+  disableThemeToggle: false # 关闭主题切换按钮
+  ShowPageNums: true # 显示页码
+  ShowPostNavLinks: true # 显示上一页/下一页按钮
+  ShowCodeCopyButtons: true # 代码块中包含一个快速复制按钮
+  ShowBreadCrumbs: true # 添加痕迹导航
+
+  ShowToc: true # 文章显示目录
+  TocOpen: true # 目录默认打开
+
+  DateFormat: "2006-01-02" # 日期格式化，貌似必须是这一天
+
+  # 主页介绍
+  homeInfoParams:
+    Title: "Teledoge618"
+    Content: "嵌入式电子爱好者 H0x026A@outlook.com"
+
+
+markup:
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true

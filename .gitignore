@@ -1,9 +1,4 @@
-out
-build
-temp
-__pycache__
-*.egg-info
-dist
-.vscode
+/public
+/.vscode
 
 
