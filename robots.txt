@@ -1,2 +1,3 @@
 User-agent: *
+Disallow:
 Sitemap: https://teledoge618.github.io/sitemap.xml
