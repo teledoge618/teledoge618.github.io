@@ -42,6 +42,7 @@ params: # 参数
 
   ShowToc: true # 文章显示目录
   TocOpen: true # 目录默认打开
+  UseHugoToc: true
 
   DateFormat: "2006-01-02" # 日期格式化，貌似必须是这一天
 
