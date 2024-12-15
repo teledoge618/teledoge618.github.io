@@ -1,7 +1,6 @@
 baseURL: "https://teledoge618.github.io/"
 title: Teledoge618' Blog # 网站名
-theme: "PaperMod" # 主题
-pagerSize: 5 # 显示文章数量
+theme: "hextra" # 主题
 author: ["Me"]
 
 languageCode: zh
@@ -13,15 +12,26 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-minify:
-  disableXML: true
-
-menu: # 标题菜单
+menu:
   main:
-    - name: "文章"
-      url: "/posts/archives/"
-    - name: "搜索"
-      url: "/search/"
+    - name: Docs
+      pageRef: /docs
+      weight: 1
+    - name: About
+      pageRef: /about
+      weight: 2
+    - name: Contact ↗
+      url: "https://github.com/imfing"
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/imfing/hextra-starter-template"
+      params:
+        icon: github
 
 outputs:
   home:
@@ -41,18 +51,30 @@ params: # 参数
   ShowBreadCrumbs: true # 添加痕迹导航
 
   ShowToc: true # 文章显示目录
-  TocOpen: true # 目录默认打开
+  TocOpen: false # 目录默认打开
   UseHugoToc: true
 
   DateFormat: "2006-01-02" # 日期格式化，貌似必须是这一天
 
-  # 主页介绍
-  homeInfoParams:
-    Title: "Teledoge618"
-    Content: "嵌入式电子爱好者 H0x026A@outlook.com"
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
+
+  editURL:
+    enable: false
 
 
 markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
   highlight:
     noClasses: false
 
